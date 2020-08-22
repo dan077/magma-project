@@ -1,0 +1,58 @@
+{
+    "home":{
+      "title":"Magma Ingeniería",
+      "desc" : "Grupo de Investigación de Matemática Aplicada a la Ingeniería",
+      "img_background" : "Welcome_Page/assets/images/full_image_2.jpg"
+    },
+
+    "navBar":
+    {
+     "logo" : ["Welcome_Page/assets/images/Logo.png","logo"],
+      "home" : ["#home","Inicio"],
+      "aboutUs" : ["href","Sobre nosotros"],
+      "news" : ["href","Noticias"],
+      "members" : ["href","Integrantes"],
+      "utilities" : ["href","Utilidades"],
+      "investigation" : ["#investigacion","Lineas de investigación"]
+    },
+    
+    "group_data":
+    {
+      "title_table" : "Datos Basicos",
+      "content" : [
+        {"title":"Gran Área" ,"desc":"Ingeniería y Tecnología"},
+        {"title":"Categoría" ,"desc":"A1"},
+        {"title":"Creación del Grupo" ,"desc":"Febrero, 2002"},
+        {"title":"Área de Conocimiento" ,"desc":"Ingenierías Eléctrica, Electrónica e Informática"},
+          {"title":"Código del Grupo" ,"desc":"COL0005978"},
+        {"title":"Programa Nacional de CyT" ,"desc":"Ciencia, Tecnología e Innovación en Ingeniería"}
+        ]
+    },
+    "lines_of_investigation":
+    {
+      "title_table" : "LÍNEAS DE INVESTIGACIÓN",
+      "content" : [
+        {"img":"Welcome_Page/assets/images/lineas_investigacion/bioingenieria.png" ,"responsibles":"AURA M. POLO LLANOS, OMAR RODRÍGUEZ.", "desc":"Seguimiento de parámetros fisiológicos. Instrumentación y procesamiento de señales. Bioelectricidad y electroquímica. Inteligencia artificial."},
+        {"img":"Welcome_Page/assets/images/lineas_investigacion/disenoelectronico.png" ,"responsibles":"HEINER CASTRO, JOHN TABORDA, CARLOS ROBLES.", "desc":"Sistemas embebidos. Monitoreo y control en tiempo real. Sistemas digitales: VHDL sobre FPGA. Diseño de prototipos."},
+        {"img":"Welcome_Page/assets/images/lineas_investigacion/fenomenos.png" ,"responsibles":"JESÚS DAVID GONZÁLEZ, JESÚS BELTRÁN SÁNCHEZ.", "desc":"Sistemas mesoscópicos superconductores. Modelado y simulación de superconductores."},
+        {"img":"Welcome_Page/assets/images/lineas_investigacion/sistemas.png" ,"responsibles":"JOHN TABORDA, CARLOS ROBLES.", "desc":"Aplicación de métodos matemáticos. Algoritmos evolutivos. Sistemas dinámicos y de control. Convertidores de potencia. Energía renovable. Eficiencia energética."},
+        {"img":"Welcome_Page/assets/images/lineas_investigacion/ensenanza.png" ,"responsibles":"OMAR RODRÍGUEZ, AURA M. POLO LLANOS, JOHN TABORDA.", "desc":"Facilitar el proceso de enseñanza-aprendizaje. Investigación e innovación del currículo. Proceso de mejora continua. Herramientas tecnológicas."}
+
+        ]
+    },
+    "members":
+    {
+      "title_table" : "INTEGRANTES",
+      "desc_table" : "Los integrantes del grupo de investigación son profesionales comprometidos con el porvenir del país, poseen una visión positiva del futuro y trabajan fuertemente por ello. Es su misión contribuir al desarrollo del país, especialmente de la región Caribe, buscando así una mejor calidad de vida para todos.",
+      "content" : [
+        {"img":"Welcome_Page/assets/images/integrantes/noFoto_hombre.jpg" ,"name":"Carlos Arturo Robles Algarín","position":"Primer lider","email":"croblesa@unimagdalena.edu.co"},
+        {"img":"Welcome_Page/assets/images/integrantes/John_Taborda.png" ,"name":"John Alexander Taborda Giraldo","position":"Segundo lider","email":"jtaborda@unimagdalena.edu.co"},
+        {"img":"Welcome_Page/assets/images/integrantes/Aura_Polo.png" ,"name":"Aura Margarita Polo Llanos","position":"","email":"apolol@unimagdalena.edu.co"},
+        {"img":"Welcome_Page/assets/images/integrantes/Cristina_Pereira.png" ,"name":"Cristina Isabel Pereira Pomarico","position":"","email":""},
+        {"img":"Welcome_Page/assets/images/integrantes/Diego_Restrepo.png" ,"name":"Diego Andrés Restrepo Leal","position":"","email":"diegorestrepoal@unimagdalena.edu.co"},
+        {"img":"Welcome_Page/assets/images/integrantes/Heiner_Castro.png" ,"name":"Heiner Castro Gutierrez","position":"","email":"hcastro@unimagdalena.edu.co"}
+
+
+      ]
+    }
+  }
