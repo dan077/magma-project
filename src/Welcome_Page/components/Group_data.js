@@ -62,7 +62,7 @@ export default  class Group_data extends Component {
           <section id="fh5co-intro">
           <div className="container">
             <div className="row row-bottom-padded-lg">
-              <div className="fh5co-block to-animate" style={{"border-top-right-radius": "7em 5em",
+              <div className="fh5co-block "  data-aos="fade-right" style={{"border-top-right-radius": "7em 5em",
               "border-bottom-left-radius": "7em 5em"}}>
                 <div className="overlay"></div>
                 <div className="fh5co-text" dangerouslySetInnerHTML= {{__html: this.CreateTable(group_content_table)}} >

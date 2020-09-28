@@ -1,15 +1,16 @@
 import React, {Component}from "react"
-
 //import logo from '../assets/img/Logo.png'
 
 export default class Lines_of_investigation extends Component {
     
+    
+
     addTitle(title){
 
       return( 
         `
           <div class="col-md-12 section-heading text-left">
-              <h2 class="left-border to-animate">${title}</h2> 
+              <h2 class="left-border " data-aos="fade-up">${title}</h2> 
           </div> 
         `
       )
@@ -18,7 +19,7 @@ export default class Lines_of_investigation extends Component {
     addElement(responsibles,desc,img){
       return(
         `
-        <div class="col-md-6 col-sm-6 fh5co-service to-animate">
+        <div class="col-md-6 col-sm-6 fh5co-service " data-aos="fade-down">
           <img src=${img}>
           <p class="text-white">${desc}</p>
           <p class="text-right muted">${responsibles}</p>
@@ -58,13 +59,13 @@ export default class Lines_of_investigation extends Component {
 
     render(){
         const lines_of_investigation = this.props.lines_of_investigation;
-        const navPropieties = this.props.navPropieties;
+        const data_section = this.props.data_section;
         return(
-          <section id="fh5co-services" data-section={navPropieties.investigation[0].substring(1,navPropieties.investigation[0].length)}>
+          <section id="fh5co-services"  data-section={data_section}>
             <div className="container lineaInvestigacion" dangerouslySetInnerHTML= {{__html: this.CreateTable(lines_of_investigation)}}>
             </div>
         </section>
-   
+          
         )
     }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router,Route,Switch} from "react-router-dom" 
 //import 'bootstrap/dist/css/bootstrap.min.css';
 /** Componentes **/
 import NavBar from  './Welcome_Page/components/NavBar'
@@ -17,18 +18,33 @@ import "../src/Welcome_Page/assets/css/magnific-popup.css"
 import "../src/Welcome_Page/assets/css/bootstrap.css"
 import "../src/Welcome_Page/assets/sass/blue.scss"
 import "../src/Welcome_Page/assets/css/App.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+function navSection(string){
+  return string.substring(1, string.length)
+}
+
+AOS.init({
+  duration : 1000
+})
 
 function App() {
+
   //La razon por la que paso las propiedades de navegacion es para la data-nav-section.
   //Nota: hay agregar los data-nav-section (no hecho)
+//<Route path="/" exact component={Home,Group_data,Lines_of_investigation,Members}></Route>
   return (
-    <React.Fragment>
-      <NavBar navPropieties = {config.navBar} />
-      <Home homePropieties = {config.home} navPropieties = {config.navBar}/>
-      <Group_data group_content_table = {config.group_data} navPropieties = {config.navBar}/>
-      <Lines_of_investigation lines_of_investigation = {config.lines_of_investigation} navPropieties = {config.navBar}/>
-      <Members members = {config.members} navPropieties = {config.navBar} />
-    </React.Fragment>
+    <Router>
+ 
+        <NavBar navPropieties = {config.navBar} />
+          <Route exact path="/" component = {() => <Home homePropieties = {config.home} navPropieties = {config.navBar} /> }/>
+          <Route exact path="/"  component = {() => <Group_data group_content_table = {config.group_data} navPropieties = {config.navBar}/>}/>
+          <Route exact path="/"  component = {() => <Lines_of_investigation lines_of_investigation = {config.lines_of_investigation} data_section = {navSection(config.navBar.investigation[0])}/>} />
+          <Members members = {config.members} data_section = {navSection(config.navBar.members[0])} />
+
+
+    </Router>
   );
 }
 

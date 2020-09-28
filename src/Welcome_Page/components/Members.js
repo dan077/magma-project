@@ -8,9 +8,9 @@ export default class Members extends Component {
       return( 
         `
         <div class="col-md-12 section-heading text-center">
-				<h2 class="to-animate">${title}</h2>
+				<h2 data-aos="fade-up">${title}</h2>
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 subtext to-animate ">
+					<div class="col-md-8 col-md-offset-2 subtext" data-aos="fade-up">
 						<h3>${desc}</h3>
 					</div>
 				</div>
@@ -25,8 +25,8 @@ export default class Members extends Component {
 
       return(
         `
-          <div class="col-md-4">
-          <div class="fh5co-person text-center to-animate sizePerson">
+          <div class="col-md-4" data-aos="fade-down">
+          <div class="fh5co-person text-center sizePerson">
             <figure><img src=${img} alt="Image"></figure>
             <h3>${name}</h3>
             <span class="fh5co-position">${position}</span>
@@ -68,9 +68,9 @@ export default class Members extends Component {
 
     render(){
         const members = this.props.members;
-
+        const data_section = this.props.data_section;
         return(
-          <section id="fh5co-about" data-section="about">
+          <section id="fh5co-about" data-section={data_section}>
             <div className="container" dangerouslySetInnerHTML= {{__html: this.CreateTable(members)}}>
             </div>
           </section>

@@ -9,11 +9,11 @@
     {
      "logo" : ["Welcome_Page/assets/images/Logo.png","logo"],
       "home" : ["#home","Inicio"],
+      "investigation" : ["#investigacion","Lineas de investigación"],
+      "members" : ["#integrantes","Integrantes"],
       "aboutUs" : ["href","Sobre nosotros"],
       "news" : ["href","Noticias"],
-      "members" : ["href","Integrantes"],
-      "utilities" : ["href","Utilidades"],
-      "investigation" : ["#investigacion","Lineas de investigación"]
+      "utilities" : ["href","Utilidades"]
     },
     
     "group_data":
